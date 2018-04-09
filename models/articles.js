@@ -5,18 +5,18 @@ const Schema = mongoose.Schema;
 const articlesSchema = new Schema({
 	title: {
 		type: String,
-		required: true,
-		unique: true
+		required: true
+		// unique: true
 	},
 	link: {
 		type: String,
-		required: true,
-		unique: true
+		required: true
+		// unique: true
 	},
-	summary: {
+	description: {
 		type: String,
-		required: true,
-		unique: true
+		required: true
+		// unique: true
 	}
 });
 
