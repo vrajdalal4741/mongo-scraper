@@ -1,0 +1,26 @@
+<header class="header">
+	<a href="/articles">Home</a>
+</header>
+{{#each this.articles}}
+
+<ul>
+	<li>{{title}}</li>
+	<li><a href="{{link}}">Continue Reading...</a></li>
+	<li>{{description}}</li>
+	<button class="delete-btn" data-id="{{id}}">Delete Article</button>
+	
+	<div class="comment-div">
+		{{#comments}}
+			<ul>
+				<li>{{text}}<button class="delete-comment-btn" data-id='{{id}}'>Delete</button></li>
+			</ul>
+		{{/comments}}
+	</div>
+
+	<form action="api/comment/{{id}}" method="POST">
+		<input type="text" name="comment" class="comment-box" placeholder="Notes.."></input>
+		<button type="submit" class="comment-btn" data-id="{{id}}">Save Comment</button>
+	</form>
+</ul>
+
+{{/each}}

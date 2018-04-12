@@ -29,6 +29,5 @@ const apiRoutes = require('./routes/apiRoutes.js');
 app.use(apiRoutes);
 
 app.listen(PORT, function() {
-	console.log('App now listening at localhost: ' + PORT);
+    console.log('App now listening at localhost: ' + PORT);
 });
-

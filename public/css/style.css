@@ -1,0 +1,18 @@
+body {
+	background: url('../img/fantasy-football-nfl-logo.jpg');
+	font-weight: bold;
+	font-size: 20px;
+}
+
+ul {
+	background-color: orange;
+	margin: 50px;
+/*	padding: 10px;*/
+}
+
+header {
+	text-align: center;
+	background-color: orange;
+	margin-left: 150px;
+	margin-right: 150px;
+}

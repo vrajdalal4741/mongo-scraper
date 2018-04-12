@@ -1,11 +1,17 @@
+<header class="header">
+	<a href="/articles">Home</a>
+	<a href="/scrape"><button class="btn">Click for New FF Articles!</button></a>
+	<a href="/saved">Fantasy Football Archives</a>
+</header>
+
 {{#each articles}}
 
 <ul>
 	<li>{{title}}</li>
 	<li><a href="{{link}}">Continue Reading...</a></li>
 	<li>{{description}}</li>
+	<button class="archive-btn" data-title="{{title}}" data-link="{{link}}" data-description="{{description}}" data-id="{{id}}">Archive Article</button>
 </ul>
 
-{{link}}
 {{/each}}
 
